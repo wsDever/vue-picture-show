@@ -8,10 +8,11 @@
     "build": "cross-env NODE_ENV=production npx webpack --mode production"
   },
   "private": false,
-  "homepage": " ",
+  "homepage": "https://github.com/wsDever/vue-picture-show/readme.md",
+  "keywords": ["vue-picture","picture","vue-picture-show"],
   "repository": {
     "type": "git",
-    "url": " "
+    "url": "https://github.com/wsDever/vue-picture-show.git"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
