@@ -1,6 +1,6 @@
 {
   "name": "wue-picture-show",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vue picture-show components!",
   "main": "dist/main.js",
   "scripts": {
@@ -9,7 +9,11 @@
   },
   "private": false,
   "homepage": "https://github.com/wsDever/vue-picture-show/readme.md",
-  "keywords": ["vue-picture","picture","vue-picture-show"],
+  "keywords": [
+    "vue-picture",
+    "picture",
+    "vue-picture-show"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/wsDever/vue-picture-show.git"
