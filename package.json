@@ -1,6 +1,6 @@
 {
   "name": "wue-picture-show",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A vue picture-show components!",
   "main": "dist/main.js",
   "scripts": {
