@@ -21,10 +21,18 @@ let config = {
    * 入口文件设置
    * @type {Object}
    */
-  entry: {
-    main: ENV == 'development' ? './src/index.js' : './src/components/pic-show/index.js',
-  },
-
+  // entry: {
+  //   main: ENV == 'development' ? './src/index.js' : './src/components/pic-show/index.js'
+  // },
+    entry:() => {
+      return ENV == 'development' 
+      ? {
+        index: './src/index.js'
+      }:{
+        index: './src/index.js',
+        main: './src/components/pic-show/index.js'
+      }
+    },
   /**
    * loader 规则
    * @type {Object}
@@ -102,11 +110,11 @@ let config = {
   optimization: {
     splitChunks: {
       cacheGroups: {
-        common: {
-          name: 'common',
-          chunks: 'all',
-          minChunks: 2
-        }
+        // common: {
+        //   name: 'common',
+        //   chunks: 'all',
+        //   minChunks: 2
+        // }
       }
     }
   }
@@ -121,8 +129,8 @@ if (ENV === 'development') {
   config.plugins.push(new webpack.HotModuleReplacementPlugin());
   config.plugins.push(
     new HtmlWebpackPlugin({
-      template: './index.html',
-      filename: './index.html',
+      template: './app.html',
+      filename: './app.html',
       inject: 'body'
     })
   )
