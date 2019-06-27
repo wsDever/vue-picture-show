@@ -39,3 +39,6 @@ onClose: func        ---- 关闭图片时的函数 ，默认空
 ###### 2019-06-17 -2.0.0
 ###### 1、添加图片旋转、放大、缩小功能
 
+
+#### Demo效果
+[点击查看](https://wsdever.github.io/vue-picture-show/)
